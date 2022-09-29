@@ -30,6 +30,12 @@ gradle clean test
 
 - Obtain data form DB to test users with the same characteristic by different data (For example, you want a user from EU with all products selected like User user = UserBuilder.withRegion(Region.EU).withSelectedProduct(Product.ALL).isEmailValidate(Boolean.TRUE).build()) Each time you execute, you have different user but same characteristic.
 
-- All the functionality and fields should be implement with Page Object Pattern
+- Create a core library with pages, utils, data creation, etc. You can export it to different teams and teams can create their own test.
 
-- Logging info using same class and same way to show it
+- All the functionality and fields should be implement with Page Object Pattern.
+
+- Build pattern to create data.
+
+- Use logging class to show all traces.
+
+
